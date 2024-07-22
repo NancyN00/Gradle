@@ -2,7 +2,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.devtools.ksp)
-    alias(libs.plugins.compose.compiler)
+
+
 }
 
 android {
@@ -70,14 +71,21 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation (libs.androidx.navigation.compose)
-    implementation (libs.coil.compose)
+    implementation(libs.coil.compose)
     implementation (libs.androidx.room.runtime)
     implementation (libs.androidx.room.ktx)
     implementation (libs.androidx.lifecycle.runtime.compose)
     implementation (libs.androidx.runtime.livedata)
     implementation (libs.androidx.lifecycle.livedata.ktx)
+
     annotationProcessor (libs.androidx.room.compiler)
     ksp (libs.androidx.room.room.compiler)
+
+
+
+
+
+
 
 
 
